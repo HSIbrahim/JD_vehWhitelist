@@ -46,7 +46,7 @@ Citizen.CreateThread(function()
 		if ownedVehicle(veh) then
 			if GetPedInVehicleSeat(veh, -1) == Faxped then
 				ShowInfo("~r~~h~Restricted Vehicle.~h~~s~ This vehicle is restricted. If incorrect make report on Forums.")
-				exports.JD_logs:discord('**'.. GetPlayerName(PlayerId()) ..'** tried to get in a `'.. VehNameText ..'`', '1752220', 'vehicle') -- Export to JD_logs
+				--exports.JD_logs:discord('**'.. GetPlayerName(PlayerId()) ..'** tried to get in a `'.. VehNameText ..'`', '1752220', 'vehicle') -- Export to JD_logs (https://github.com/JokeDevil/JD_logs)
 				if Config.DeleteVehilce then
 				SetEntityAsMissionEntity(veh, true, true)
 				DeleteVehicle(veh)
