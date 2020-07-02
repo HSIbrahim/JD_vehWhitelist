@@ -23,10 +23,10 @@
  open Config.lua
  Add the SteamHEX of people on a new line to  add them to the list
  ```
- ['steam:123456789123456'] = lockedVehicles,						-- Give Access to All Locked Vehicles   ### Player 1
- ['steam:123456789123456'] = {'apc'},							      -- Give Access to Single Vehicles       ### Player 2
- ['steam:123456789123456'] = {'apc'},       						-- Give Access to Single Vehicles       ### Player 3
- ['steam:123456789123456'] = {'apc'},							      -- Give Access to Single Vehicles       ### Player 4
+ ['steam:123456789123456'] = lockedVehicles,	-- Give Access to All Locked Vehicles   ### Player 1
+ ['steam:123456789123456'] = {'apc'},							 -- Give Access to Single Vehicles       ### Player 2
+ ['steam:123456789123456'] = {'apc'},       	-- Give Access to Single Vehicles       ### Player 3
+ ['steam:123456789123456'] = {'apc'},							 -- Give Access to Single Vehicles       ### Player 4
  ```
 
 
