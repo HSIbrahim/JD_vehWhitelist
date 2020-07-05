@@ -1,12 +1,15 @@
 Config = {}
 
 
-Config.JD_logs = true
-Config.JD_Logs_color = "1752220"
-Config.JD_Logs_channel = "vehicle"
-Config.DeleteVehilce = true
-Config.join = "Thank you for supporting ~o~Our Server~s~. Your private vehicles have been ~g~loaded~s~."
-Config.alert = "~r~~h~Restricted Vehicle.~h~~s~ This vehicle is restricted. If incorrect make report on Forums."
+Config.JD_logs = true  -- enable this if you use https://github.com/JokeDevil/JD_logs
+Config.JD_Logs_color = "1752220" -- Color in Hex Code
+Config.JD_Logs_channel = "vehicle" -- Discord Webhook Channel
+
+
+Config.DeleteVehilce = true -- set to false if you dont want to delete the vehicle the player is in.
+
+Config.join = "Thank you for supporting ~o~Our Server~s~. Your private vehicles have been ~g~loaded~s~." -- This message only shows if you have access to any vehicles at all
+Config.alert = "~r~~h~Restricted Vehicle.~h~~s~ This vehicle is restricted. If incorrect make report on Forums." -- This is the message that tells you the vehicle is restricted and you can't access
 
 local lockedVehicles = {
 	'riot2	',
