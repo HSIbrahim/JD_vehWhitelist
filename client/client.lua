@@ -45,8 +45,10 @@ Citizen.CreateThread(function()
 	if DoesEntityExist(veh) then
 		if ownedVehicle(veh) then
 			if GetPedInVehicleSeat(veh, -1) == Faxped then
-				ShowInfo("~r~~h~Restricted Vehicle.~h~~s~ This vehicle is restricted. If incorrect make report on Forums.")
-				--exports.JD_logs:discord('**'.. GetPlayerName(PlayerId()) ..'** tried to get in a `'.. VehNameText ..'`', '1752220', 'vehicle') -- Export to JD_logs (https://github.com/JokeDevil/JD_logs)
+				ShowInfo(Config.alert)
+				if Config.JD_logs then
+				exports.JD_logs:discord('**'.. GetPlayerName(PlayerId()) ..'** tried to get in a `'.. VehNameText ..'``', Config.JD_Logs_color, Config.JD_Logs_channel) -- Export to JD_logs
+				end
 				if Config.DeleteVehilce then
 				SetEntityAsMissionEntity(veh, true, true)
 				DeleteVehicle(veh)
@@ -65,7 +67,7 @@ end)
 Citizen.CreateThread(function()
 	Wait(400)
 	if Config.purchased['' .. steamid .. ''] ~= nil then
-		ShowInfo("Thank you for supporting ~o~Innovation Roleplay~s~. Your private vehicles have been ~g~loaded~s~.")
+		ShowInfo(Config.join)
 	end
 end)
 
