@@ -1,6 +1,12 @@
 Config = {}
 
+
+Config.JD_logs = true
+Config.JD_Logs_color = "1752220"
+Config.JD_Logs_channel = "vehicle"
 Config.DeleteVehilce = true
+Config.join = "Thank you for supporting ~o~Our Server~s~. Your private vehicles have been ~g~loaded~s~."
+Config.alert = "~r~~h~Restricted Vehicle.~h~~s~ This vehicle is restricted. If incorrect make report on Forums."
 
 local lockedVehicles = {
 	'riot2	',
