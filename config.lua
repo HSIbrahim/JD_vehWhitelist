@@ -1,7 +1,7 @@
 Config = {}
 
 
-Config.JD_logs = true		-- Set to false if you're not using my Discord to Logs resource ( https://github.com/JokeDevil/JD_logs )
+Config.JD_logs = false		-- Set to true if you're using my Discord to Logs resource ( https://github.com/JokeDevil/JD_logs )
 Config.JD_Logs_color = "1752220"
 Config.JD_Logs_channel = "vehicle"
 
