@@ -20,6 +20,66 @@ function ownedVehicle(veh)
 				return true
 			end
 		end
+		for i2 = 1, #Config.lockedVehicles2 do
+		local model3 = GetHashKey(Config.lockedVehicles2[i2])
+		if model == model3 then
+			if Config.purchased['' .. steamid .. ''] ~= nil then
+				for ii = 1, #Config.purchased[steamid] do
+					if GetHashKey(Config.purchased[steamid][ii]) == model then
+						return false
+					end
+				end
+				return true
+			else
+				return true
+			end
+		end
+		end
+		for i3 = 1, #Config.lockedVehicles3 do
+		local model4 = GetHashKey(Config.lockedVehicles3[i3])
+		if model == model4 then
+			if Config.purchased['' .. steamid .. ''] ~= nil then
+				for ii = 1, #Config.purchased[steamid] do
+					if GetHashKey(Config.purchased[steamid][ii]) == model then
+						return false
+					end
+				end
+				return true
+			else
+				return true
+			end
+		end
+		end
+		for i4 = 1, #Config.lockedVehicles4 do
+		local model5 = GetHashKey(Config.lockedVehicles4[i4])
+		if model == model5 then
+			if Config.purchased['' .. steamid .. ''] ~= nil then
+				for ii = 1, #Config.purchased[steamid] do
+					if GetHashKey(Config.purchased[steamid][ii]) == model then
+						return false
+					end
+				end
+				return true
+			else
+				return true
+			end
+		end
+		end
+		for i5 = 1, #Config.lockedVehicles5 do
+		local model6 = GetHashKey(Config.lockedVehicles5[i5])
+		if model == model6 then
+			if Config.purchased['' .. steamid .. ''] ~= nil then
+				for ii = 1, #Config.purchased[steamid] do
+					if GetHashKey(Config.purchased[steamid][ii]) == model then
+						return false
+					end
+				end
+				return true
+			else
+				return true
+			end
+		end
+		end
 	end
 	return false
 end
@@ -47,7 +107,7 @@ Citizen.CreateThread(function()
 			if GetPedInVehicleSeat(veh, -1) == Faxped then
 				ShowInfo(Config.alert)
 				if Config.JD_logs then
-				exports.JD_logs:discord('**'.. GetPlayerName(PlayerId()) ..'** tried to get in a `'.. VehNameText ..'``', Config.JD_Logs_color, Config.JD_Logs_channel) -- Export to JD_logs
+				exports.JD_logs:discord('**'.. GetPlayerName(PlayerId()) ..'** tried to get in a `'.. VehNameText ..'`', Config.JD_Logs_color, Config.JD_Logs_channel) -- Export to JD_logs
 				end
 				if Config.DeleteVehilce then
 				SetEntityAsMissionEntity(veh, true, true)

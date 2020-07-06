@@ -1,15 +1,14 @@
 Config = {}
 
 
-Config.JD_logs = true  -- enable this if you use https://github.com/JokeDevil/JD_logs
-Config.JD_Logs_color = "1752220" -- Color in Hex Code
-Config.JD_Logs_channel = "vehicle" -- Discord Webhook Channel
+Config.JD_logs = true		-- Set to false if you're not using my Discord to Logs resource ( https://github.com/JokeDevil/JD_logs )
+Config.JD_Logs_color = "1752220"
+Config.JD_Logs_channel = "vehicle"
 
+Config.DeleteVehilce = true    -- set to false if you don't wamt the vehicle to be deleted.
+Config.join = "Thank you for supporting ~o~Our Server~s~. Your private vehicles have been ~g~loaded~s~."
+Config.alert = "~r~~h~Restricted Vehicle.~h~~s~ This vehicle is restricted. If incorrect make report on Forums."
 
-Config.DeleteVehilce = true -- set to false if you dont want to delete the vehicle the player is in.
-
-Config.join = "Thank you for supporting ~o~Our Server~s~. Your private vehicles have been ~g~loaded~s~." -- This message only shows if you have access to any vehicles at all
-Config.alert = "~r~~h~Restricted Vehicle.~h~~s~ This vehicle is restricted. If incorrect make report on Forums." -- This is the message that tells you the vehicle is restricted and you can't access
 
 local lockedVehicles = {
 	'riot2	',
@@ -54,7 +53,6 @@ local lockedVehicles = {
 	'deluxo',
 	'oppressor',
 	'oppressor2',
-	'apc',
 	'chernobog',
 	'barrage',
 	'halftrack',
@@ -150,12 +148,33 @@ local lockedVehicles = {
 	'mogul',
 	'nokota',
 }
+local lockedVehicles2 = {
+	--'apc'
+}
+local lockedVehicles3 = {
+	--'apc'
+}
+local lockedVehicles4 = {
+	--'apc'
+}
+local lockedVehicles5 = {
+	--'apc'
+}
+
 Config.lockedVehicles = lockedVehicles
+Config.lockedVehicles2 = lockedVehicles2
+Config.lockedVehicles3 = lockedVehicles3
+Config.lockedVehicles4 = lockedVehicles4
+Config.lockedVehicles5 = lockedVehicles5
 
 Config.purchased = {
 
-	-- Template
-	--['steam:123456789123456'] = lockedVehicles,						-- Give Access to All Locked Vehicles
+	--Template
+	--['steam:123456789123456'] = lockedVehicles,						-- Give Access to All Locked Vehicles Class 1
+	--['steam:123456789123456'] = lockedVehicles2,						-- Give Access to All Locked Vehicles Class 2
+	--['steam:123456789123456'] = lockedVehicles3,						-- Give Access to All Locked Vehicles Class 3
+	--['steam:123456789123456'] = lockedVehicles4,						-- Give Access to All Locked Vehicles Class 4
+	--['steam:123456789123456'] = lockedVehicles5,						-- Give Access to All Locked Vehicles Class 5
 	--['steam:123456789123456'] = {'apc'},							    -- Give Access to Single Vehicles
 
 
