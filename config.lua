@@ -1,6 +1,5 @@
 Config = {}
 
-
 Config.JD_logs = false		-- Set to true if you're using my Discord to Logs resource ( https://github.com/JokeDevil/JD_logs )
 Config.JD_Logs_color = "1752220"
 Config.JD_Logs_channel = "vehicle"
@@ -170,12 +169,14 @@ Config.lockedVehicles5 = lockedVehicles5
 Config.purchased = {
 
 	--Template
-	--['steam:123456789123456'] = lockedVehicles,						-- Give Access to All Locked Vehicles Class 1
+	--['steam:123456789123456'] = lockedVehicles,							-- Give Access to All Locked Vehicles Class 1
 	--['steam:123456789123456'] = lockedVehicles2,						-- Give Access to All Locked Vehicles Class 2
 	--['steam:123456789123456'] = lockedVehicles3,						-- Give Access to All Locked Vehicles Class 3
 	--['steam:123456789123456'] = lockedVehicles4,						-- Give Access to All Locked Vehicles Class 4
 	--['steam:123456789123456'] = lockedVehicles5,						-- Give Access to All Locked Vehicles Class 5
-	--['steam:123456789123456'] = {'apc'},							    -- Give Access to Single Vehicles
+	--['steam:123456789123456'] = {'apc'},							    	-- Give Access to Single Vehicles
 
 
 }
+
+Config.versionCheck = "1.0.2"
