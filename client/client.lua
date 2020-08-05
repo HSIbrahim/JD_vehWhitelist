@@ -107,7 +107,7 @@ Citizen.CreateThread(function()
 			if GetPedInVehicleSeat(veh, -1) == Faxped then
 				ShowInfo(Config.alert)
 				if Config.JD_logs then
-				exports.JD_logs:discord('**'.. GetPlayerName(PlayerId()) ..'** tried to get in a `'.. VehNameText ..'`', Config.JD_Logs_color, Config.JD_Logs_channel) -- Export to JD_logs
+				exports.JD_logs:discord('**'.. GetPlayerName(PlayerId()) ..'** tried to get in a `'.. VehNameText ..'`',GetPlayerServerId(PlayerId()), 0, Config.JD_Logs_color, Config.JD_Logs_channel) -- Export to JD_logs
 				end
 				if Config.DeleteVehilce then
 				SetEntityAsMissionEntity(veh, true, true)
